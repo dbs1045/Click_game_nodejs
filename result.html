@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+body{background-image: url('./background.jpg')}
+
+.center {
+  margin: 0 auto;
+  width: 400px;
+  background: rgba(255, 255, 128, .5);
+  padding: 20px;
+  color: black;
+}
+    </style>
+    <meta charset="utf-8">
+    <title>결과화면</title>
+  </head>
+  <body>
+    <div class='center'>
+    <h1>결과화면</h1>
+    <p id="counter">버튼을 선택하세요</p>
+    <input type="button" style="WIDTH: 60pt; HEIGHT: 60pt" id="button" onclick="button_click();" value="다시하기" />
+    <input type="button" style="WIDTH: 60pt; HEIGHT: 60pt" id="button2"onclick="openTextFile()" value="랭킹보기"/>
+    <div id="output">...</div>
+    </div>
+    <script src="./data.txt" id="text">
+    </script>
+    <script src="./readtext.js">
+    </script>
+  </body>
+</html>

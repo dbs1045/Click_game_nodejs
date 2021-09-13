@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+body{background-image: url('./background.jpg')}
+
+.center {
+  margin: 0 auto;
+  width: 400px;
+  background: rgba(255, 255, 128, .5);
+  padding: 20px;
+  color: black;
+}
+    </style>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+    .button{
+      padding: 15px 25px;
+      font-size: 24px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: #fff;
+      background-color: #04AA6D;
+      border: none;
+      border-radius: 100%;
+      box-shadow: 0 9px #999;
+    }
+    .button:hover {background-color: #3e8e41}
+
+    .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    }
+    </style>
+
+  </head>
+  <body>
+    
+    <div class='center'>
+    <h4>버튼 누르기 게임<h4>
+    <input type="text" style="WIDTH: 60pt; HEIGHT: 15pt" id="username"/>
+    <input type="button" style="WIDTH: 30pt; HEIGHT: 20pt" id="username" onclick="nameinput();" value="입력"/><br><br>
+    <input type="button" button class="button" id="button1" onclick="button1_click();" value="Click!" />
+    <span id="countdown">10s</span><br><br>
+    치트키<input type="text" id="cheatkey"/>
+    <input type="button" style="WIDTH: 30pt; HEIGHT: 20pt" id="button2" onclick="cheatinput();" value="확인"/>
+    <audio id="audio" src="./bgm.mp3">
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="./game.js"> </script>
+  </body>
+</html>

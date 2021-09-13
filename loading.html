@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<style>
+body{background-image: url('./background.jpg')}
+</style>
+
+    <script>
+      function loaded(){
+        setTimeout(function(){
+          document.all.loading.style.display = 'none';
+          document.all.wrap.style.display = 'block';
+        },3000)
+      }
+    </script>
+  </head>
+  <body onload="loaded();">
+      <div id="loading" runat="server" style="position:absolute;left:50%;top:50%;margin-top:-140px; margin-left:-250px;DISPLAY: block;text-align:center;">
+      <img src="hackman.gif" width="500" height="250" border="0"><br><br>
+      <font color="999999" style="font-size:30px;">페이지 로딩중입니다.</font></div>
+      <div id="wrap" runat="server" style="DISPLAY:none">
+      </div>
+      <script>
+      setTimeout(function(){
+          location.href='http://localhost:8080'
+        },3000)
+      </script>
+  </body>
+</html>
